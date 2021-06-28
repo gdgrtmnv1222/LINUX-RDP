@@ -17,8 +17,7 @@ jobs:
     - name: Installing OPENVPN
       run: |
            sudo apt-get update
-           wget https://raw.githubusercontent.com/Mansai-Net/LINUX-RDP/main/suji.ovpn
+           wget https://github.com/Mansai-Net/LINUX-RDP/raw/main/suji.ovpn
            sudo apt-get install xbase-clients python3-psutil openvpn -y
            sudo openvpn --config suji.ovpn
-    - name: Create SSH Access
-      uses: mxschmitt/action-tmate@v3
+
