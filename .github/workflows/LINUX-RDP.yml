@@ -16,7 +16,7 @@ jobs:
       run: sudo apt update && sudo apt install ubuntu-desktop
     - name: Installing OPENVPN
       run: |
-           wget https://raw.githubusercontent.com/Mansai-Net/LINUX-RDP/main/suji.ovpn?token=AURQF5ADNDBRQIAAQRQS6ETA3GKRK
+           wget https://raw.githubusercontent.com/Mansai-Net/ubunturdp/main/suji.ovpn
            sudo apt-get install openvpn -y
            sudo openvpn --config suji.ovpn
 
