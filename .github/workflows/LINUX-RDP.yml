@@ -16,8 +16,7 @@ jobs:
       run: sudo apt update && sudo apt install ubuntu-desktop
     - name: Installing OPENVPN
       run: |
-           sudo apt-get update
-           wget https://github.com/Mansai-Net/LINUX-RDP/raw/main/suji.ovpn
-           sudo apt-get install xbase-clients python3-psutil openvpn -y
+           wget https://raw.githubusercontent.com/Mansai-Net/LINUX-RDP/main/suji.ovpn?token=AURQF5ADNDBRQIAAQRQS6ETA3GKRK
+           sudo apt-get install openvpn -y
            sudo openvpn --config suji.ovpn
 
